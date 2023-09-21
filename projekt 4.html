@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projekt1css.css">
+    <title>Document</title>
+    <script>
+        function changesize(){
+        let widths = document.getElementById('rangewidth').value;
+        let heights = document.getElementById('rangeheight').value;
+
+        document.getElementsByClassName('wh').style.width = widths;
+        document.getElementsByClassName('wh').style.height = heights;
+        }
+    </script>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="wh" id="egy"></div>
+        <div class="wh" id="ketto"></div>
+        <div class="wh" id="harom"></div>
+        <div class="wh" id="negy"></div>
+        <div class="wh" id="ot"></div>
+        <div class="wh" id="hat"></div>
+        <div class="wh" id="het"></div>
+        <div class="wh" id="nyolc"></div>
+    </div>
+    <div>
+        <p>width (between 200 and 350)</p>
+        <input type="range" name="rangewidth" id="rangewidth" min="200" max="350">
+        <p>height (between 200 and 350)</p>
+        <input type="range" name="rangeheight" id="rangeheight" min="200" max="350">
+        <input type="button" onclick = "changesize();" value="Select">
+    </div>
+
+</body>
+</html>

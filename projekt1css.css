@@ -1,0 +1,43 @@
+:root{
+    --color1: #fff;
+}
+body{
+    background-color: var(--color1);
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+div div{
+    width: 300px;
+    height: 150px;
+    margin: 5px;
+}
+#egy{
+    background-color:blueviolet;
+}
+#ketto{
+    background-color:lightsteelblue ;
+}
+#harom{
+    background-color: cyan;
+}
+#negy{
+    background-color: darkslategray;
+}
+#ot{
+    background-color: indianred;
+}
+#hat{
+    background-color: lightpink;
+}
+#het{
+    background-color: fuchsia;
+}
+#nyolc{
+    background-color: salmon;
+}
+input{
+    height: 40px;
+    width: 70px;
+}
